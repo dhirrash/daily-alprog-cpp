@@ -1,35 +1,16 @@
 #include <iostream>
 #include <string>
 
-/*int main(){
-int tinggi, panjang;
-std::cin >> tinggi;
-std::cin >> panjang;
-
-for(int i = 1; i < tinggi; i++){
-    for(int j = 1; j < panjang; j++){
-    std::cout << "*";
-    }
-    std::cout << '\n';
-}
-
-return 0;
-}
-*/
-
-
 /* buat pola dan huruf:
-persegi : batas sama
-persegi panjang : batas beda
-
-
-
-
-
+panjang : x,panjang
+tinggi : x,x
+kosong : +x, -x
+tinggi kanan : tinggi
+tinggi keluar : 2 * x
 */
-#include <iostream>
 
 void buatA(int x){
+
     int panjang = 5 * x;
 
     for(int i = 0; i < x; i++){
@@ -49,11 +30,13 @@ void buatA(int x){
         std::cout << "A";
         std::cout << '\n';
     }
+
     for(int i = 0; i < x; i++){
         for(int j = 0; j < panjang; j++)
         std::cout << "A";
         std::cout << '\n';
     }
+
     for(int i = 0; i < x * 2; i++){
         for(int j = 0; j < x; j++)
         std::cout << "A";
@@ -76,6 +59,7 @@ void buatB(int x){
         std::cout << "B";
         std::cout << '\n';
     }
+
     for(int i = 0; i < x; i++){
         for(int j = 0; j < x; j++)
         std::cout << "B";
@@ -104,7 +88,7 @@ void buatB(int x){
         for(int j = 0; j < x + x; j++)
         std::cout << "B";
         std::cout << '\n';
-        }
+    }
 
     for(int i = 0; i < x; i++){
         for(int j = 0; j < panjang; j++)
@@ -177,12 +161,6 @@ void buatD(int x){
             std::cout << "D";
             std::cout << '\n';
     }
-    
-
-
-
-
-
 }
 
 int main(){

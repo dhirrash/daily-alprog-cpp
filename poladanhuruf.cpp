@@ -68,57 +68,127 @@ void buatA(int x){
 }
 
 void buatB(int x){
+
     int panjang = 5 * x;
 
-for(int i = 0; i < x; i++){
-    for(int j = 0; j < panjang; j++)
-    std::cout << "B";
-    std::cout << '\n';
-}
-for(int i = 0; i < x; i++){
-    for(int j = 0; j < x; j++)
-    std::cout << "B";
+    for(int i = 0; i < x; i++){
+        for(int j = 0; j < panjang; j++)
+        std::cout << "B";
+        std::cout << '\n';
+    }
+    for(int i = 0; i < x; i++){
+        for(int j = 0; j < x; j++)
+        std::cout << "B";
 
-    for(int j = 0; j + x < panjang - x;j++)
-    std::cout << " ";
+        for(int j = 0; j + x < panjang - x;j++)
+        std::cout << " ";
 
-    for(int j = 0; j < x + x; j++)
-    std::cout << "B";
-    std::cout << '\n';
+        for(int j = 0; j < x + x; j++)
+        std::cout << "B";
+        std::cout << '\n';
+        }
+
+    for(int i = 0; i < x; i++){
+        for(int j = 0; j < panjang; j++)
+        std::cout << "B";
+        std::cout << '\n';
     }
 
-for(int i = 0; i < x; i++){
-    for(int j = 0; j < panjang; j++)
-    std::cout << "B";
-    std::cout << '\n';
+    for(int i = 0; i < x; i++){
+        for(int j = 0; j < x; j++)
+        std::cout << "B";
+
+        for(int j = 0; j + x < panjang - x;j++)
+        std::cout << " ";
+
+        for(int j = 0; j < x + x; j++)
+        std::cout << "B";
+        std::cout << '\n';
+        }
+
+    for(int i = 0; i < x; i++){
+        for(int j = 0; j < panjang; j++)
+        std::cout << "B";
+        std::cout << '\n';
+    }
 }
 
-for(int i = 0; i < x; i++){
-    for(int j = 0; j < x; j++)
-    std::cout << "B";
+void buatC(int x){
 
-    for(int j = 0; j + x < panjang - x;j++)
-    std::cout << " ";
+    int panjang = 5 * x;
 
-    for(int j = 0; j < x + x; j++)
-    std::cout << "B";
-    std::cout << '\n';
+    for(int i = 0; i < x; i++){
+        for(int j = 0; j < panjang; j++)
+            std::cout << "C";
+            std::cout << '\n';
     }
 
-for(int i = 0; i < x; i++){
-    for(int j = 0; j < panjang; j++)
-    std::cout << "B";
-    std::cout << '\n';
-}
+    for(int i = 0; i < x; i++){
+        for(int j = 0; j < x; j++)
+            std::cout << "C";
+
+        for(int k = 0 + x; k < panjang - x; k++)
+            std::cout << " ";
+            std::cout << '\n';
+    }
+
+    for(int i = 0; i < x; i++){
+        for(int j = 0; j < panjang; j++)
+            std::cout << "C";
+            std::cout << '\n';
+    }
 }
 
+void buatD(int x){
+    int panjang = 5 * x;
 
+    for(int i = 0; i < x; i++){
+        for(int j = 0; j < panjang; j++)
+            std::cout << "D";
+            std::cout << '\n';
+    }
+
+    for(int i = 0; i < x; i++){
+        for(int j = 0; j < x; j++)
+            std::cout << "D";
+
+        for(int k = 0 + x; k < panjang - x; k++)
+            std::cout << " ";
+
+        for(int l = 0; l < 2 * x; l++)
+            std::cout << "D";
+            std::cout << '\n';       
+    }
+
+    for(int i = 0; i < x; i++){
+        for(int j = 0; j < x; j++)
+            std::cout << "D";
+
+        for(int k = 0 + x; k < panjang - x; k++)
+            std::cout << " ";
+
+        for(int l = 0; l < 2 * x; l++)
+            std::cout << "D";
+            std::cout << '\n';       
+    }
+    
+    for(int i = 0; i < x; i++){
+        for(int j = 0; j < panjang; j++)
+            std::cout << "D";
+            std::cout << '\n';
+    }
+    
+
+
+
+
+
+}
 
 int main(){
     int x;
     std::cin >> x;
-    buatB(x);
-
+    buatD(x);
 
     return 0;
 }
